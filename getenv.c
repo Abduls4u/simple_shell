@@ -32,8 +32,7 @@ int _unsetenv(info_t *info, char *var)
 
 	if (!node || !var)
 		return (0);
-
-while (node)
+	while (node)
 	{
 		p = starts_with(node->str, var);
 		if (p && *p == '=')
